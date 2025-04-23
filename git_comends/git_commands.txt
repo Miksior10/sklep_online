@@ -1,0 +1,129 @@
+# Komendy do utworzenia nowego repozytorium Git
+
+# 1. Utwórz nowy folder i przejdź do niego
+mkdir sklep-online
+cd sklep-online
+
+# 2. Inicjalizuj repozytorium Git
+git init
+
+# 3. Skonfiguruj swoje dane Git (zastąp swoimi danymi)
+git config --global user.email "twoj.email@example.com"
+git config --global user.name "Twoje Imię i Nazwisko"
+
+# 4. Utwórz plik .gitignore
+echo "# XAMPP files
+/xampp/
+*.log
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment files
+.env
+config.php
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Uploaded files
+/uploads/
+/images/products/" > .gitignore
+
+# 5. Utwórz plik README.md
+echo "# Sklep Online
+
+Projekt sklepu internetowego z panelem administracyjnym, zarządzaniem produktami, koszykiem zakupowym i systemem użytkowników.
+
+## Funkcjonalności
+
+- Panel administracyjny
+- Zarządzanie produktami
+- System użytkowników (admin, manager, user)
+- Koszyk zakupowy
+- Historia zamówień
+- Filtrowanie produktów
+- Responsywny design
+
+## Wymagania
+
+- PHP 7.4+
+- MySQL 5.7+
+- XAMPP lub podobne środowisko
+
+## Instalacja
+
+1. Sklonuj repozytorium
+2. Zaimportuj bazę danych z pliku \`database.sql\`
+3. Skonfiguruj połączenie z bazą danych w pliku \`config.php\`
+4. Uruchom serwer XAMPP
+5. Otwórz projekt w przeglądarce
+
+## Struktura projektu
+
+\`\`\`
+sklep/
+├── admin/             # Panel administracyjny
+├── api/              # API endpoints
+├── images/           # Obrazy produktów
+├── includes/         # Wspólne pliki PHP
+├── uploads/          # Pliki uploadowane przez użytkowników
+├── config.php        # Konfiguracja bazy danych
+├── index.php         # Strona główna
+└── README.md         # Dokumentacja
+\`\`\`
+
+## Licencja
+
+MIT" > README.md
+
+# 6. Dodaj pliki do repozytorium
+git add .
+
+# 7. Zatwierdź zmiany
+git commit -m "Initial commit"
+
+# 8. Połącz z repozytorium na GitHubie (zastąp URL swoim)
+git remote add origin https://github.com/TWOJA_NAZWA_UZYTKOWNIKA/sklep-online.git
+
+# 9. Ustaw główną gałąź
+git branch -M main
+
+# 10. Wypchnij zmiany na GitHub
+git push -u origin main
+
+# Komendy do sprawdzania plików w repozytorium
+# 1. Pokaż wszystkie pliki w repozytorium
+git ls-files
+
+# 2. Pokaż liczbę plików w repozytorium
+git ls-files | wc -l
+
+# 3. Pokaż status plików (dodane, zmodyfikowane, usunięte)
+git status
+
+# 4. Pokaż szczegółowe informacje o plikach
+git ls-tree -r main --name-only
+
+# WAŻNE: Przed wykonaniem komend:
+# 1. Zastąp "twoj.email@example.com" swoim adresem email
+# 2. Zastąp "Twoje Imię i Nazwisko" swoim imieniem i nazwiskiem
+# 3. Zastąp "TWOJA_NAZWA_UZYTKOWNIKA" swoją nazwą użytkownika na GitHubie 
