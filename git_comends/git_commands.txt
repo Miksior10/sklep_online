@@ -95,20 +95,27 @@ sklep/
 
 MIT" > README.md
 
-# 6. Dodaj pliki do repozytorium
+# 1. Dodaj pliki do repozytorium
 git add .
 
-# 7. Zatwierdź zmiany
+# 2. Zatwierdź zmiany
 git commit -m "Initial commit"
 
-# 8. Połącz z repozytorium na GitHubie (zastąp URL swoim)
-git remote add origin https://github.com/TWOJA_NAZWA_UZYTKOWNIKA/sklep-online.git
+# 3. Połącz z repozytorium na GitHubie (zastąp URL swoim)
+git remote add origin https://github.com/Miksior10/sklep-online.git
 
-# 9. Ustaw główną gałąź
+# 4. Ustaw główną gałąź
 git branch -M main
 
-# 10. Wypchnij zmiany na GitHub
+# 5. Wypchnij zmiany na GitHub
 git push -u origin main
+
+
+
+
+
+
+
 
 # Komendy do sprawdzania plików w repozytorium
 # 1. Pokaż wszystkie pliki w repozytorium
